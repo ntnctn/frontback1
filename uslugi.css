@@ -1,0 +1,237 @@
+/* Стиль для больших экранов (по умолчанию) */
+/* .img-title {
+    height: 670px;
+    width: 100%;
+    /* background-image: linear-gradient(to right, #fff2e400 0%, rgb(0 0 0 / 85%) 100%), url(32.jpg);
+    background-size: cover; */
+    /* display: flex; */
+    /* flex-direction: column;
+    text-align: right; */
+    /* gap: 10px; */
+    /* margin: 25px 0; */
+    /* padding: 170px 60px 40px 300px; */
+  /* }  */
+  
+  .img-title > h2 {
+    font-size: 6em;
+  }
+  
+  .img-title > p {
+    font-size: 1.2em;
+  }
+  
+  .title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    margin: 40px 0px;
+  }
+  
+  .title > h2 {
+    font-size: xx-large;
+    margin: 0px;
+  }
+  
+  .about > img {
+    width: 15%;
+    float: right;
+  }
+  
+  .card {
+    width: 225px;
+    min-height: 350px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column; /* Размещаем элементы в колонку */
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
+  }
+  
+  .card:hover {
+    padding: 2px;
+  }
+  
+  .card__top {
+    flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+    position: relative;
+    overflow: hidden; /* Скрываем, что выходит за пределы */
+  }
+  
+  .card-image {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height: 100%;*/
+  }
+  
+  .card-image > img {
+    width: 225px;
+    height: 270px;
+    /* object-fit: contain; */
+    transition: 0.2s;
+    object-fit: cover;
+  }
+  
+  .card-bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    padding: 10px 0px 15px 0px;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .card-name {
+    font-size: x-large;
+    font-family: var(--h-font);
+    text-transform: uppercase;
+  }
+  
+  .card-description {
+    font-size: small;
+    font-weight: 100;
+  }
+  
+  .open-modal {
+    display: block;
+    width: 40%;
+    align-self: center;
+    /* font-weight: 400; */
+    font-size: small;
+    padding: 6px 12px 6px 12px;
+    text-align: center;
+    border: 1px solid var(--text-main-color);
+    /* border-radius: 4px; */
+    cursor: pointer;
+    transition: 0.2s;
+    margin: auto;
+    background-color: transparent;
+  
+    background-image: linear-gradient(var(--text-main-color), var(--text-main-color));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+  }
+  
+  .open-modal:hover {
+    background-size: 100% 2px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 225px);
+    width: 100%;
+    column-gap: 50px;
+    row-gap: 60px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  
+  /*форма*/
+  .contactForm {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0); /* Черный фон */
+    background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный фон */
+  }
+  
+  .contactForm_content {
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto; /* Центрируем модальное окно */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 15px;
+    width: 80%; /* Ширина модального окна */
+    gap: 10px;
+  }
+  
+  .submit {
+    color: #aaa;
+    float: right;
+    font-weight: bold;
+    width: 10%;
+    margin-top: 10px;
+    align-self: center;
+    background-color: transparent;
+    color: black;
+  }
+  
+  .close {
+    color: #aaa; /* Цвет кнопки закрытия */
+    float: right;
+    font-weight: bold;
+    width: 3%;
+    align-self: flex-end;
+    background-color: transparent;
+    color: black;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Медиа-запрос для мобильных устройств */
+  @media screen and (max-width: 768px) {
+    .img-title {
+      height: 400px; /* Изменяем высоту изображения */
+      padding: 80px 20px 20px 20px; /* Изменяем отступы */
+      text-align: center; /* Центрируем текст */
+    }
+
+    .title {
+        
+        gap: 10px;
+        margin: 40px ;
+      }
+  
+    .img-title > h2 {
+      font-size: 3em; /* Изменяем размер шрифта заголовка */
+    }
+  
+    .img-title > p {
+      font-size: 1em; /* Изменяем размер шрифта параграфа */
+    }
+  
+    .about > img {
+      width: 30%; /* Изменяем ширину изображения */
+      float: none; /* Убираем плавающее */
+      margin: 0 auto; /* Центрируем изображение */
+    }
+  
+    .cards {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Изменяем сетку карточек */
+      column-gap: 20px; /* Изменяем разрыв между колонками */
+      row-gap: 30px; /* Изменяем разрыв между строками */
+    }
+  
+    .card {
+      width: 90%; /* Изменяем ширину карточек */
+      margin: 0 auto; /* Центрируем карточки */
+    }
+  
+    .card-image > img {
+      width: 100%; /* Изменяем ширину изображения карточки */
+      height: auto; /* Автоматически подстраиваем высоту */
+    }
+  
+    .open-modal {
+      width: 80%; /* Изменяем ширину кнопки */
+    }
+  }
+    

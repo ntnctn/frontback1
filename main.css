@@ -1,0 +1,305 @@
+:root {
+    --b-color: #161411;
+    --light-beige: #d8d4ca;
+    --blurb-b-color: #515225;
+    --text-main-color: #f0daae;
+   
+    --h-font: Ardeco;
+   }
+   
+   body {
+    /* font-family: Verdana, "Trebuchet MS", Calibri, sans-serif; */
+    font-family: Bahnschrift Condensed;
+    font-weight: 100;
+   
+    background-color: var(--b-color);
+    color: var(--text-main-color);
+   }
+   
+   h1,
+   h2,
+   h3,
+   .header,
+   .navigation {
+    font-family: var(--h-font);
+    text-transform: uppercase;
+   }
+   
+   a,
+   button {
+    color: var(--text-main-color);
+   }
+   
+   .main {
+     margin-top: 30px; 
+   }
+   
+   .container {
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid #ccc; */
+   }
+   
+   .content {
+    display: flex;
+    flex-direction: column;
+   }
+   
+   /* .header { */
+   /* display: flex; */
+   /* justify-content: space-between; */
+   /* align-items: center; */
+   /* } */
+   /* .header-left { */
+   /* display: flex; */
+   /* gap: 20px; */
+   /* } */
+   /* .logo { */
+   /* margin: 5px 0px 15px 15px; */
+   /* } */
+   /* .header-right { */
+   /* display: flex; */
+   /* gap: 10px; */
+   /* margin: 5px 15px 15px 0px; */
+   /* flex-direction: column; */
+   /* } */
+   
+   .header {
+    position: fixed;
+    top: 0;
+    width: 100%; /* Шапка займёт всю ширину окна браузера */
+    z-index: 1000;
+   
+    font-size: large;
+   }
+   
+   .group-and-name {
+    margin-left: auto;
+   }
+   
+   .navigation {
+    display: flex;
+    gap: 20px;
+    /* border-top: 3px solid #ccc; */
+    /* border-bottom: 3px solid #ccc; */
+    padding: 10px 10px 15px 15px;
+   
+    /* background-color: var(--blurb-b-color); */
+    background-image: linear-gradient(
+     to top,
+     #fff2e400 0%,
+     rgb(0 0 0 / 85%) 100%
+    );
+   
+    font-size: large;
+   }
+   
+   .navigation-item {
+    gap: 10px;
+    color: #007bff;
+    font-size: large;
+   
+    display: flex;
+    justify-content: flex-start;
+   
+    font-size: large;
+   
+    text-decoration: none;
+    background-image: linear-gradient(
+     var(--text-main-color),
+     var(--text-main-color)
+    );
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+   }
+   
+   .navigation-item:hover {
+    background-size: 100% 2px;
+   }
+   
+   a,
+   u {
+    text-decoration: none;
+   }
+   
+   ul,
+   li {
+    list-style: none;
+   }
+   
+   ul {
+    padding-left: 0px;
+   }
+   
+   .main {
+    display: flex;
+   }
+   
+   .main-left {
+    width: 15%;
+    /* border-right: 3px solid #ccc; */
+    padding: 10px;
+   }
+   
+   .main h1,
+   .main h2,
+   .main h3 {
+    margin: 10px 0px 10px 0px;
+   }
+   
+   .main p {
+    margin: 10px;
+   }
+   
+   .main-right {
+    width: 100%;
+    /* padding: 10px 20px 10px 20px; */
+   }
+   
+   .header-title img {
+    width: 15%;
+    float: right;
+   }
+   
+   .footer {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+   }
+   
+   .footer a {
+    float: right;
+   }
+   
+   .footer p {
+    margin: 0px;
+   }
+   
+   .footer img {
+    width: 35px;
+    float: right;
+    border-radius: 5px;
+    margin: 5px;
+   }
+   
+   @font-face {
+    font-family: "Ardeco";
+    src: url("fonts/Ardeco.eot");
+    src: url("fonts/Ardeco.eot?#iefix") format("embedded-opentype"),
+     url("fonts/Ardeco.woff2") format("woff2"),
+     url("fonts/Ardeco.woff") format("woff"),
+     url("fonts/Ardeco.ttf") format("truetype"),
+     url("fonts/Ardeco.svg#Ardeco") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+   }
+   
+   @font-face {
+    font-family: "RomanS_IV25";
+    src: url("fonts/RomanS_IV25.eot");
+    src: url("fonts/RomanS_IV25.eot?#iefix") format("embedded-opentype"),
+     url("fonts/RomanS_IV25.woff2") format("woff2"),
+     url("fonts/RomanS_IV25.woff") format("woff"),
+     url("fonts/RomanS_IV25.ttf") format("truetype"),
+     url("fonts/RomanS_IV25.svg#RomanS_IV25") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+   }
+   
+   @font-face {
+    font-family: "Bahnschrift";
+    src: url("fonts/Bahnschrift.eot");
+    src: url("fonts/Bahnschrift.eot?#iefix") format("embedded-opentype"),
+     url("fonts/Bahnschrift.woff2") format("woff2"),
+     url("fonts/Bahnschrift.woff") format("woff"),
+     url("fonts/Bahnschrift.ttf") format("truetype"),
+     url("fonts/Bahnschrift.svg#Bahnschrift") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+   }
+   
+   @font-face {
+    font-family: "Literature Decor";
+    src: url("fonts/LiteratureDecor.eot");
+    src: url("fonts/LiteratureDecor.eot?#iefix") format("embedded-opentype"),
+     url("fonts/LiteratureDecor.woff2") format("woff2"),
+     url("fonts/LiteratureDecor.woff") format("woff"),
+     url("fonts/LiteratureDecor.ttf") format("truetype"),
+     url("fonts/LiteratureDecor.svg#LiteratureDecor") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+   }
+   
+   @font-face {
+    font-family: "FRANKINITY";
+    src: url("fonts/FRANKINITYRegular.woff2") format("woff2"),
+     url("fonts/FRANKINITYRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+   }
+   
+   @font-face {
+    font-family: "Mettlach";
+    src: url("fonts/Mettlach..ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+   }
+   
+   /* Медиа-запрос для мобильных устройств */
+   @media screen and (max-width: 768px) {
+    
+    h1, h2, h3{
+        text-align: center;
+    }
+    embed {
+        margin: auto;
+    }
+    .group-and-name{
+        display:none;
+    }
+    .main {
+     flex-direction: column; /* Размещаем элементы в колонку */
+     margin-top: 130px;
+    }
+   
+    .main-left {
+     width: 100%; /* Занимает всю ширину экрана */
+     border-right: none; /* Убираем границу */
+    }
+   
+    .main-right {
+     width: 100%; /* Занимает всю ширину экрана */
+    }
+   
+    .header-title img {
+     width: 50%; /* Изменяем ширину изображения */
+     float: none; /* Убираем плавающее */
+     margin: 0 auto; /* Центрируем изображение */
+    }
+   
+    .navigation {
+     flex-direction: column; /* Размещаем элементы в колонку */
+     gap: 10px; /* Изменяем разрыв между элементами */
+     background-color: var(--b-color);
+    }
+   
+    .navigation-item {
+     display: block; /* Занимает всю ширину */
+     text-align: center; /* Выравниваем текст по центру */
+     font-size: medium; /* Изменяем размер шрифта */
+    }
+   
+    .footer img {
+     width: 8.75 px; /* Изменяем ширину изображения */
+    }
+   }
+      

@@ -1,0 +1,58 @@
+/* Стиль для больших экранов (по умолчанию) */
+.number {
+	width: 50px;
+  }
+  
+  table {
+	width: 90%;
+	border: 2px solid #ccc;
+	border-collapse: collapse;
+  }
+  
+  th, td {
+	text-align: left;
+	border: 2px solid var(--text-main-color);
+  }
+
+  button{
+	background-color: var(--b-color);
+	margin: 10px;
+	border-radius: 5px;
+
+
+  }
+
+  h1 {
+	transition: background-color 0.5s ease; 
+  }
+  
+  .lecturesTable {
+	transition: opacity 0.5s ease;
+  }
+  
+
+/* #student-photo{
+width: 50%;
+
+} */
+
+  /* Медиа-запрос для мобильных устройств */
+  @media screen and (max-width: 768px) {
+	/* Изменяем ширину столбцов таблицы */
+	table {
+	  width: 95%; /* Занимает всю ширину экрана */
+	  margin: auto;
+	}
+  
+	/* Изменяем размер шрифта в ячейках */
+	th, td {
+	  font-size: smaller;
+	}
+  
+	/* Делаем ячейки таблицы более компактными */
+	.number {
+	  width: 30px; /* Изменяем ширину ячеек с номерами */
+	}
+  }
+  
+  
